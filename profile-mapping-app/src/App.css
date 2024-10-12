@@ -129,15 +129,7 @@ body {
   z-index: 10;
 }
 
-h3 {
-  position: absolute;
-  z-index: 20;
-  color: white;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  top: 20px;
-  left: 20px;
-}
+
 
 /* Responsive Design for mobile devices */
 @media (max-width: 768px) {

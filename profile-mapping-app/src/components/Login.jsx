@@ -90,9 +90,12 @@ const Login = ({ onLogin }) => {
             </div>
 
             {isUser && (
-                <p>
-                    New User? <button onClick={() => navigate('/signup')}>Sign Up</button>
-                </p>
+                <div className='additional-info'>
+                    <p>
+                        New User?
+                    </p>
+                    <button onClick={() => navigate('/signup')}>Sign Up</button>
+                </div>
             )}
         </div>
     );

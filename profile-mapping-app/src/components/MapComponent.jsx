@@ -16,8 +16,8 @@ const MapComponent = ({ position, address }) => {
         <MapContainer
             center={position}
             zoom={13}
-            style={{ height: '100vh', width: '100vw' }}
-            className="map"
+            style={{ height: '100%', width: '100%' }}
+            className="map w-full"
         >
             <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

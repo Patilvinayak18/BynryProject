@@ -34,8 +34,16 @@ h1{
     color: #d692fe;
     
 }
-
+.additional-info{
+    position: absolute;
+    bottom: 70px;
+    display: flex;
+    padding: 1.5%;
+    align-items: center;
+    gap: 8%;
+}
 h2 {
+
     margin-bottom: 15px;
     color: #f1fe92;
 }
@@ -95,17 +103,18 @@ p {
     color: rgb(114, 177, 255);
 }
 
-p button {
-    background: none;
-    color: #ff5722;
+.additional-info button {
+    background: #e64a19;
+    color: #ffffff;
     border: none;
     cursor: pointer;
     text-decoration: underline;
     font-size: 14px;
 }
 
-p button:hover {
-    color: #e64a19;
+.additional-info button:hover {
+    background-color: #ff0000;
+   
 }
 label{
     color: #3375f8;
