@@ -1,0 +1,147 @@
+* {
+    margin: 0; /* Reset margin for all elements */
+    padding: 0; /* Reset padding for all elements */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+html, body {
+    height: 100%; /* Ensure body and html take full height */
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full height of the viewport */
+    width: 100%; /* Full width */
+    background-image: url('../images/signin.jpg'); /* Ensure the correct path to the image */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: rgb(31, 29, 29);
+    padding: 0; /* Remove padding to eliminate gaps */
+    margin: 0; /* Remove margin to eliminate gaps */
+    text-align: center;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+h1{
+    margin-bottom: 15px;
+    color: #d692fe;
+    
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #f1fe92;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent background for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px; /* Responsive width for the form */
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Adds a slight shadow for depth */
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+
+.role-toggle {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+p {
+    margin-top: 10px;
+    color: rgb(114, 177, 255);
+}
+
+p button {
+    background: none;
+    color: #ff5722;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+p button:hover {
+    color: #e64a19;
+}
+label{
+    color: #3375f8;
+
+}
+
+/* Media queries to ensure responsiveness on smaller screens */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 10px;
+    }
+
+    form {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+

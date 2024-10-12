@@ -1,38 +1,170 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #f0f4f8, #e9eff3);
+  color: #333;
+}
+
 .App {
   text-align: center;
+  padding: 0;
+  margin: 0;
+  position: relative; /* Allows child elements to be positioned absolutely */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+/* Styling for the website icon */
+.website-icon {
+  width: 50px;
+  height: 50px;
+}
+
+/* Styling for the title */
+.app-title h1 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Styling for the search box */
+.search-box {
+  flex-grow: 1;
+  padding: 0 20px;
+  max-width: 600px; /* Limit the width to make the search box smaller */
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  background-color: #f0f4f8;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-input:focus {
+  background-color: #ffffff;
+  border-color: #007bff;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+
+/* Styling for the profile icon */
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.profile-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Profile cards styling */
+.profile-list {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+}
+
+.profile-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profile-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s; /* Add box shadow transition */
+}
+
+.profile-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.app-footer {
+  margin-top: 20px;
+  padding: 10px 0;
+  background-color: #4a90e2;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Full page map styling */
+.map-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h3 {
+  position: absolute;
+  z-index: 20;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  top: 20px;
+  left: 20px;
+}
+
+/* Responsive Design for mobile devices */
+@media (max-width: 768px) {
+  .app-header {
+    flex-direction: column;
+    padding: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .search-box {
+    margin-top: 10px;
+    max-width: 100%;
   }
+
+  .auth-buttons {
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+  }
+
+  .app-title h1 {
+    font-size: 20px;
+    margin-top: 20px; 
+    color: rgb(5, 87, 87);
+}
+
+.profile-icon {
+    width: 40px; /* Adjust size for mobile */
+    height: 40px; /* Adjust size for mobile */
+}
 }

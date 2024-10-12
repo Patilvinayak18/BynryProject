@@ -1,0 +1,149 @@
+/* AdminPanel.css */
+
+.admin-panel {
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Padding around content */
+    max-width: 600px; /* Max width to prevent it from stretching too wide */
+    margin: 20px auto; /* Center the panel */
+    font-family: Arial, sans-serif; /* Consistent font */
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Title styling */
+.admin-panel h2 {
+    font-size: 24px; /* Larger font for the title */
+    margin-bottom: 20px; /* Space below the title */
+    color: #333; /* Darker color for contrast */
+}
+
+/* Form input styling */
+.admin-panel input {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside inputs */
+    margin-bottom: 15px; /* Space below inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Slightly rounded corners */
+    font-size: 14px; /* Consistent font size */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Input focus effect */
+.admin-panel input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button styling */
+.admin-panel button {
+    background-color: #007bff; /* Blue background for buttons */
+    color: white; /* White text */
+    padding: 10px 15px; /* Padding for buttons */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    width: 100%; /* Full width for button */
+}
+
+/* Button hover effect */
+.admin-panel button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Current profiles list styling */
+.admin-panel h3 {
+    margin-top: 30px; /* Space above the section */
+    font-size: 20px; /* Slightly smaller than title */
+    color: #333; /* Darker color for contrast */
+}
+
+.admin-panel ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+.admin-panel li {
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between name and button */
+    align-items: center; /* Center items vertically */
+    padding: 10px; /* Padding for list items */
+    border-bottom: 1px solid #ddd; /* Light border below each item */
+}
+
+.admin-panel li:last-child {
+    border-bottom: none; /* Remove border from last item */
+}
+
+/* Delete button styling */
+.admin-panel li button {
+    background-color: #dc3545; /* Red background for delete button */
+    padding: 5px 10px; /* Padding for delete button */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Delete button hover effect */
+.admin-panel li button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .admin-panel {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .admin-panel h2 {
+        font-size: 22px; /* Smaller title */
+    }
+
+    .admin-panel h3 {
+        font-size: 18px; /* Smaller subheading */
+    }
+
+    .admin-panel input {
+        font-size: 12px; /* Smaller input text */
+    }
+
+    .admin-panel button {
+        padding: 8px 10px; /* Smaller button padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .admin-panel {
+        padding: 10px; /* Further reduce padding for very small screens */
+    }
+
+    .admin-panel h2 {
+        font-size: 20px; /* Even smaller title */
+    }
+
+    .admin-panel h3 {
+        font-size: 16px; /* Even smaller subheading */
+    }
+
+    .admin-panel input {
+        font-size: 12px; /* Keep input text small */
+    }
+
+    .admin-panel button {
+        padding: 6px 8px; /* Smaller button padding */
+    }
+
+    .admin-panel li {
+        flex-direction: column; /* Stack items vertically for very small screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .admin-panel li button {
+        width: 100%; /* Full width for delete button */
+        margin-top: 5px; /* Space above the button */
+    }
+}
+
