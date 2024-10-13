@@ -5,7 +5,7 @@ export const profiles = [
         photo: "https://img.freepik.com/premium-photo/photo-document-passport-id-mature-caucasian-man-suit_262388-3596.jpg?w=2000",
         description: "Web Developer based in New York.",
         address: "123 Main St, New York, NY 10001",
-        location: "Pune", // Use city or country name
+        location: "New York", // Use city or country name
     },
     {
         id: 2,
@@ -33,19 +33,19 @@ export const profiles = [
     },
     {
         id: 5,
-        name: "Virat Kohli",
+        name: "perry smith",
         photo: "https://tse4.mm.bing.net/th?id=OIP.A1CwO5Q3kquQPVeE9y4WWgHaJ9&pid=Api&P=0&h=180",
-        description: "Indian Cricketer",
-        address: "Mumbai,maharastra",
-        location: "Mumbai", // Use city or country name
+        description: "actress",
+        address: "Australia",
+        location: "australia", // Use city or country name
     },
     {
         id: 6,
-        name: "Virat Kohli",
+        name: "Georgia",
         photo: "https://tse4.mm.bing.net/th?id=OIP.3dCaxs7dL2vi1FTLTOuevQHaHa&pid=Api&P=0&h=180",
-        description: "Indian Cricketer",
-        address: "Mumbai,maharastra",
-        location: "Mumbai", // Use city or country name
+        description: "photographer",
+        address: "Delhi",
+        location: "Delhi", // Use city or country name
     },
 
 ];
@@ -63,14 +63,14 @@ export const posts = [
         id: 2,
         profileId: 2, // Reference to Jane Smith's profile
         content: "Just published my latest article on data science!",
-        image: "https://images.unsplash.com/photo-1522765312985-2a1e2bce9ad7?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        image: "https://lh5.googleusercontent.com/8W6RFf04hAZ4UvFh60XFQyFnN2091-FidGz81oVG5LEMTIsVpyvZ_7BJ0iu8QIhUOCXeXfOCmnBdRWXJbmVoFGa-YqTL0BFldI63W1kK7JwBk1C73wSmyxLgdOYY88uFFzhJUJhXgIE7eN_wbw",
         timestamp: "2024-10-11T12:00:00Z"
     },
     {
         id: 3,
         profileId: 3, // Reference to Mary Johnson's profile
         content: "Loving the new design trends in 2024!",
-        image: "https://images.unsplash.com/photo-1630568119734-1f6df1cd1669?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        image: "https://miro.medium.com/v2/resize:fit:1200/1*wNqLvmGIJZBK9K1aX_T7DQ.png",
         timestamp: "2024-10-12T14:00:00Z"
     },
     {
@@ -89,15 +89,15 @@ export const posts = [
     },
     {
         id: 6,
-        profileId: 6, // Reference to the third Virat Kohli's profile
-        content: "Always working hard on my fitness!",
+        profileId: 6, 
+        content: "this photo is clicked by me!",
         image: "https://images.unsplash.com/photo-1728412390002-ca0567b27c83?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         timestamp: "2024-10-11T20:00:00Z"
     },
     {
         id: 7,
-        profileId: 4, // Reference to Virat Kohli's profile
-        content: "Dhoni is the GOAT?? #Cricket",
+        profileId: 4, 
+        content: "Virat is the GOAT?? #Cricket",
         image: "https://media.gettyimages.com/id/1472909629/photo/india-v-australia-4th-test-day-4.jpg?s=1024x1024&w=gi&k=20&c=mbEk1emxk-G9xYB-t_-kVHZZRDnKWQxfka5PNTA4c0Q=",
         timestamp: "2024-10-12T16:00:00Z"
     },
