@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './AdminPanel.css'; // If you still have additional custom styles
 import { profiles } from '../constants/ind';
 
-const AdminPanel = () => {
+const AdminPanel = ({setIsAdmin,setIsLoggedIn}) => {
     const [adminProfiles, setAdminProfiles] = useState(profiles);
     const [newProfile, setNewProfile] = useState({ name: '', photo: '', description: '', address: '', location: '' });
 
@@ -14,7 +14,12 @@ const AdminPanel = () => {
     const handleDeleteProfile = (id) => {
         setAdminProfiles(adminProfiles.filter(profile => profile.id !== id));
     };
-
+    const handleLogout = () => {
+        setIsLoggedIn(false);
+        setIsAdmin(false);
+        localStorage.removeItem('isLoggedIn');
+        localStorage.removeItem('isAdmin');
+    };
     return (
         <div className="flex h-full">
             {/* Sidebar */}
@@ -25,6 +30,7 @@ const AdminPanel = () => {
                         <li><a href="#" className="block p-2 hover:bg-gray-700 rounded">Home</a></li>
                         <li><a href="#" className="block p-2 hover:bg-gray-700 rounded">Profiles</a></li>
                         <li><a href="#" className="block p-2 hover:bg-gray-700 rounded">Settings</a></li>
+                        <li><button onClick={handleLogout}>Logout</button></li>
                     </ul>
                 </nav>
             </div>

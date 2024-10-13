@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
+  padding: 20px;
   background-color: #f8f9fa;
   border-bottom: 1px solid #ccc;
   position: relative;
@@ -26,10 +26,8 @@ body {
 
 /* Styling for the website icon */
 .website-icon {
-  width: 40px;
-  height: 40px;
-  padding-left: 5px;
-  padding-bottom: 5px;
+  width: 50px;
+  height: 50px;
 }
 
 /* Styling for the title */
@@ -72,13 +70,11 @@ body {
 }
 
 .profile-icon {
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   cursor: pointer;
   transition: transform 0.3s ease;
-  padding-right: 5px;
-  padding-bottom: 5px;
 }
 
 .profile-icon:hover {
