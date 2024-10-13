@@ -17,7 +17,7 @@ const MapComponent = ({ position, address }) => {
             center={position}
             zoom={13}
             style={{ height: '100%', width: '100%' }}
-            className="map w-full"
+            className="map w-full h-full rounded-lg shadow-lg"
         >
             <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -25,10 +25,9 @@ const MapComponent = ({ position, address }) => {
             />
             <Marker position={position} icon={customIcon}>
                 <Popup>
-                    <div>
-
-                        <h4>{address}</h4>
-
+                    <div className="text-gray-800">
+                        <h4 className="font-bold">{address}</h4>
+                        <p className="text-sm">Location based on address</p>
                     </div>
                 </Popup>
             </Marker>

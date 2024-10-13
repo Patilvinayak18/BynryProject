@@ -41,10 +41,10 @@ const UserProfile = () => {
     const userPosts = posts.filter(post => post.profileId === profile.id);
 
     return (
-        <div className="user-profile flex flex-col md:flex-row p-4 space-x-4">
+        <div className="user-profile w-full flex flex-col md:flex-row p-4 space-x-4">
             {profile ? (
                 <>
-                    <div className='flex '>
+                    <div className='flex w-full'>
                         <div className="profile-info flex-1 p-4 bg-white rounded-lg shadow-md">
                             <h2 className="text-2xl font-bold">{profile.name}</h2>
                             <img src={profile.photo} alt={`${profile.name}'s profile`} className="w-24 h-24 rounded-full mt-2" />
