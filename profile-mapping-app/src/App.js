@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import navigationicon from './images/navigation.svg';
+import navigationicon from './images/Location.png';
 import navigationIcon from './images/profile.png';
 import ProfileList from './components/SerachProfile';
 import Login from './components/Login';
